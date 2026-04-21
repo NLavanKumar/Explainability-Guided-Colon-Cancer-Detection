@@ -49,4 +49,12 @@ Grad-CAM is used to highlight important regions in histopathological images that
 - Strong ROC and PR curves
 - Consistent performance across 5 folds
 
-## 📂 Project Structure
+
+## 📌 Future Work
+- Testing on real clinical datasets
+- Multi-class cancer classification
+- Deployment as web application
+
+---
+
+⭐ If you like this project, consider giving a star!
