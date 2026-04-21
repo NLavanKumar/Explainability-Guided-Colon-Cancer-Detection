@@ -154,7 +154,9 @@ Explainability-Colon-Cancer/
 ![GradCAM Output](images/Screenshot_2026-03-12_134207.png)
 
 
-```
+```## 📸 Application Interface
+
+![Gradio App Interface](images/gradio_app_interface.png)
 
 ---
 
