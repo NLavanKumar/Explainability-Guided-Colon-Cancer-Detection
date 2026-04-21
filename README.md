@@ -57,10 +57,7 @@ Additionally, a Gradio-based interface is developed for real-time image testing,
 ## 📊 Dataset
 
 * **Dataset:** LC25000 (Histopathological Image Dataset)
-* **Total Images:** 10,000
-
-  * 5,000 Colon Adenocarcinoma
-  * 5,000 Normal Colon Tissue
+* Contains thousands of labeled histopathology images including colon adenocarcinoma and benign tissue classes ([Kaggle][1])
 
 🔗 Dataset Link: https://www.kaggle.com/datasets/andrewmvd/colorectal-histology-dataset
 
@@ -73,11 +70,31 @@ Additionally, a Gradio-based interface is developed for real-time image testing,
 1. Download dataset from the above link
 2. Extract and organize as follows:
 
-```id="m2p6nt"
+```
 data/
  ├── train/
  ├── test/
 ```
+
+---
+
+## 📸 Application Demo
+
+### 🔹 Upload Interface
+
+![Upload UI](https://github.com/NLavanKumar/Explainability-Guided-Colon-Cancer-Detection/blob/main/images/gradio_upload_screen.png)
+
+### 🔹 Cancer Prediction with Grad-CAM
+
+![Cancer Output](https://github.com/NLavanKumar/Explainability-Guided-Colon-Cancer-Detection/blob/main/images/prediction_cancer_result.png)
+
+### 🔹 Normal Tissue Prediction
+
+![Normal Output](https://github.com/NLavanKumar/Explainability-Guided-Colon-Cancer-Detection/blob/main/images/prediction_normal_result.png)
+
+### 🔹 Full Application Interface
+
+![App Interface](https://github.com/NLavanKumar/Explainability-Guided-Colon-Cancer-Detection/blob/main/images/gradio_app_interface.png)
 
 ---
 
@@ -118,7 +135,7 @@ Benefits:
 
 ## 📁 Project Structure
 
-```id="z7m9qk"
+```
 Explainability-Colon-Cancer/
 │
 ├── notebooks/
@@ -139,24 +156,13 @@ Explainability-Colon-Cancer/
 │   ├── plots/
 │   └── outputs/
 │
+├── images/
+│   └── (screenshots used in README)
+│
 ├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
-
----
-
-## 📸 Sample Output
-
-(Add your Grad-CAM images here)
-
-
-![GradCAM Output](images/Screenshot_2026-03-12_134207.png)
-
-
-```## 📸 Application Interface
-
-![Gradio App Interface](images/gradio_app_interface.png)
 
 ---
 
@@ -169,18 +175,9 @@ Explainability-Colon-Cancer/
 
 ---
 
-## 📌 Future Enhancements
-
-* Multi-class cancer classification
-* Deployment using Flask/Streamlit
-* Integration with clinical workflows
-* Optimization for edge devices
-
----
-
 ## ⚙️ Installation
 
-```bash id="1w6r0c"
+```bash
 pip install -r requirements.txt
 ```
 
@@ -188,9 +185,18 @@ pip install -r requirements.txt
 
 ## ▶️ Run the Project
 
-```bash id="9u5x1c"
+```bash
 python app/gradio_app.py
 ```
+
+---
+
+## 📌 Future Enhancements
+
+* Multi-class cancer classification
+* Deployment using Flask/Streamlit
+* Integration with clinical workflows
+* Optimization for edge devices
 
 ---
 
@@ -205,3 +211,5 @@ If you found this project useful, consider giving it a ⭐ on GitHub.
 **N Lavankumar**
 
 ---
+
+[1]: https://www.kaggle.com/datasets/andrewmvd/lung-and-colon-cancer-histopathological-images?utm_source=chatgpt.com "Lung and Colon Cancer Histopathological Images"
