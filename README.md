@@ -150,8 +150,9 @@ Explainability-Colon-Cancer/
 
 (Add your Grad-CAM images here)
 
-```md id="g5nq4x"
-![GradCAM](results/outputs/sample.png)
+```md id="g5nq4x
+!(images/Screenshot 2026-03-12 134207.png)
+
 ```
 
 ---
