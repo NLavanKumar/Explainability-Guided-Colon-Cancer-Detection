@@ -12,6 +12,18 @@ The system classifies images as *Cancer* or *Normal* and highlights key regions 
 
 ---
 
+## 📖 Extended Description
+
+Colon cancer is one of the leading causes of cancer-related deaths worldwide, and early detection plays a crucial role in improving survival rates. Traditional diagnosis through histopathological analysis is time-consuming and depends heavily on expert interpretation.
+
+This project introduces an end-to-end deep learning pipeline using EfficientNetB0 for feature extraction and classification. To ensure robustness, 5-Fold Cross Validation is applied, reducing overfitting and improving generalization.
+
+A key highlight is the integration of Explainable AI using Grad-CAM, which provides visual explanations by highlighting important regions in the image that influence predictions. This improves transparency and trust, especially in medical applications.
+
+Additionally, a Gradio-based interface is developed for real-time image testing, enabling users to upload images and visualize predictions along with heatmaps.
+
+---
+
 ## 🎯 Objectives
 
 * Build a robust deep learning model for colon cancer detection
@@ -44,13 +56,19 @@ The system classifies images as *Cancer* or *Normal* and highlights key regions 
 
 ## 📊 Dataset
 
-* **Dataset:** LC25000
-* **Total Images:** 10,000
+* **Dataset:** LC25000 (Lung and Colon Cancer Histopathological Images)
+* **Source:** Kaggle
 
-  * 5,000 Colon Adenocarcinoma
-  * 5,000 Normal Colon Tissue
+🔗 https://www.kaggle.com/datasets/andrewmvd/lung-and-colon-cancer-histopathological-images
 
-> Dataset not included due to size constraints.
+* Total Images: 25,000
+* Classes available:
+
+  * Colon Adenocarcinoma
+  * Colon Benign Tissue
+  * (Other lung classes not used in this project)
+
+> Note: Only colon-related classes are used for binary classification. Dataset is not included in this repository due to size limitations.
 
 ---
 
@@ -91,7 +109,7 @@ Benefits:
 
 ## 📁 Project Structure
 
-```
+```id="z1q9lb"
 Explainability-Colon-Cancer/
 │
 ├── notebooks/
@@ -104,6 +122,9 @@ Explainability-Colon-Cancer/
 │
 ├── app/
 │   └── gradio_app.py
+│
+├── data/
+│   └── (dataset should be placed here)
 │
 ├── results/
 │   ├── plots/
@@ -142,6 +163,6 @@ If you found this project useful, consider giving it a ⭐ on GitHub.
 
 ## 👨‍💻 Author
 
-**N LAVANKUMAR**
+**N Lavankumar**
 
 ---
