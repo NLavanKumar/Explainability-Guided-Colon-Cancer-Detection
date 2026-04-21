@@ -56,19 +56,28 @@ Additionally, a Gradio-based interface is developed for real-time image testing,
 
 ## 📊 Dataset
 
-* **Dataset:** LC25000 (Lung and Colon Cancer Histopathological Images)
-* **Source:** Kaggle
+* **Dataset:** LC25000 (Histopathological Image Dataset)
+* **Total Images:** 10,000
 
-🔗 https://www.kaggle.com/datasets/andrewmvd/lung-and-colon-cancer-histopathological-images
+  * 5,000 Colon Adenocarcinoma
+  * 5,000 Normal Colon Tissue
 
-* Total Images: 25,000
-* Classes available:
+🔗 Dataset Link: https://www.kaggle.com/datasets/andrewmvd/colorectal-histology-dataset
 
-  * Colon Adenocarcinoma
-  * Colon Benign Tissue
-  * (Other lung classes not used in this project)
+> Note: Dataset is not included in this repository due to size limitations.
 
-> Note: Only colon-related classes are used for binary classification. Dataset is not included in this repository due to size limitations.
+---
+
+## 📥 Dataset Setup
+
+1. Download dataset from the above link
+2. Extract and organize as follows:
+
+```id="m2p6nt"
+data/
+ ├── train/
+ ├── test/
+```
 
 ---
 
@@ -109,7 +118,7 @@ Benefits:
 
 ## 📁 Project Structure
 
-```id="z1q9lb"
+```id="z7m9qk"
 Explainability-Colon-Cancer/
 │
 ├── notebooks/
@@ -137,6 +146,16 @@ Explainability-Colon-Cancer/
 
 ---
 
+## 📸 Sample Output
+
+(Add your Grad-CAM images here)
+
+```md id="g5nq4x"
+![GradCAM](results/outputs/sample.png)
+```
+
+---
+
 ## 🧪 Results
 
 * Achieved strong classification performance on validation data
@@ -152,6 +171,22 @@ Explainability-Colon-Cancer/
 * Deployment using Flask/Streamlit
 * Integration with clinical workflows
 * Optimization for edge devices
+
+---
+
+## ⚙️ Installation
+
+```bash id="1w6r0c"
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Run the Project
+
+```bash id="9u5x1c"
+python app/gradio_app.py
+```
 
 ---
 
